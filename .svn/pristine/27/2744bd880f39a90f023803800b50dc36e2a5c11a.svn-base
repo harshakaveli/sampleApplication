@@ -1,0 +1,7 @@
+{
+  "realm": "Vendor",
+  "auth-server-url": "https://t1rwtbc501.ssc.tsc:18443/auth",
+  "ssl-required": "all",
+  "resource": "vendor_user_mgmt",
+  "public-client": true
+}

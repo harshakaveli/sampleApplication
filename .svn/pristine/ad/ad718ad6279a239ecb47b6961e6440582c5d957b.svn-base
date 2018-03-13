@@ -1,0 +1,150 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "keycloak-connect@3.3.0-cr.2",
+        "scope": null,
+        "escapedName": "keycloak-connect",
+        "name": "keycloak-connect",
+        "rawSpec": "3.3.0-cr.2",
+        "spec": "3.3.0-cr.2",
+        "type": "version"
+      },
+      "/home/tibco/devl/keycloak-nodejs-example-master/keycloak-nodejs-example-master"
+    ]
+  ],
+  "_from": "keycloak-connect@3.3.0-cr.2",
+  "_id": "keycloak-connect@3.3.0-cr.2",
+  "_inCache": true,
+  "_location": "/keycloak-connect",
+  "_nodeVersion": "4.2.6",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/keycloak-connect-3.3.0-cr.2.tgz_1505217279045_0.472757866140455"
+  },
+  "_npmUser": {
+    "name": "keycloak",
+    "email": "stian@redhat.com"
+  },
+  "_npmVersion": "3.5.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "keycloak-connect@3.3.0-cr.2",
+    "scope": null,
+    "escapedName": "keycloak-connect",
+    "name": "keycloak-connect",
+    "rawSpec": "3.3.0-cr.2",
+    "spec": "3.3.0-cr.2",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/keycloak-connect/-/keycloak-connect-3.3.0-cr.2.tgz",
+  "_shasum": "9aa45fcc846806828d8f67a9bd92acc602f82ad3",
+  "_shrinkwrap": null,
+  "_spec": "keycloak-connect@3.3.0-cr.2",
+  "_where": "/home/tibco/devl/keycloak-nodejs-example-master/keycloak-nodejs-example-master",
+  "author": {
+    "name": "Red Hat, Inc.",
+    "url": "http://keycloak.org"
+  },
+  "bugs": {
+    "url": "https://github.com/keycloak/keycloak-nodejs-connect/issues"
+  },
+  "bundleDependencies": [
+    "keycloak-auth-utils"
+  ],
+  "dependencies": {
+    "keycloak-auth-utils": "3.3.0-cr.2"
+  },
+  "description": "Keycloak Connect Middleware",
+  "devDependencies": {
+    "blue-tape": "^1.0.0",
+    "body-parser": "^1.13.3",
+    "cors": "^2.8.1",
+    "coveralls": "^2.11.4",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "hogan-express": "^0.5.2",
+    "ink-docstrap": "^1.3.0",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.4.3",
+    "jshint": "^2.9.4",
+    "keycloak-admin-client": "github:bucharest-gold/keycloak-admin-client",
+    "keycloak-request-token": "^0.1.0",
+    "nsp": "^2.6.2",
+    "phantomjs-prebuilt": "^2.1.14",
+    "roi": "^0.15.0",
+    "selenium-webdriver": "^2.52.0",
+    "semistandard": "^9.2.1",
+    "server-destroy": "^1.0.1",
+    "tape": "^4.6.3"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "9aa45fcc846806828d8f67a9bd92acc602f82ad3",
+    "tarball": "https://registry.npmjs.org/keycloak-connect/-/keycloak-connect-3.3.0-cr.2.tgz"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "files": [
+    "example",
+    "middleware",
+    "stores",
+    "test",
+    "index.js",
+    "uuid.js"
+  ],
+  "gitHead": "3e7ee7873b477c9cd1eeac0511e57039373d768b",
+  "homepage": "http://keycloak.org",
+  "keywords": [
+    "sso",
+    "keycloak",
+    "oauth",
+    "oauth2.0",
+    "authentication"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "stianst",
+      "email": "stianst@gmail.com"
+    },
+    {
+      "name": "lanceball",
+      "email": "lanceball@gmail.com"
+    },
+    {
+      "name": "keycloak",
+      "email": "stian@redhat.com"
+    },
+    {
+      "name": "abstractj",
+      "email": "bruno@abstractj.org"
+    }
+  ],
+  "name": "keycloak-connect",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keycloak/keycloak-nodejs-connect.git"
+  },
+  "scripts": {
+    "coverage": "istanbul cover tape -- test/unit/*.js | istanbul cover tape -- test/*.js",
+    "docs": "jsdoc --verbose -d docs -t ./node_modules/ink-docstrap/template -R README.md index.js ./middleware/*.js stores/*.js",
+    "format": "semistandard",
+    "lint": "jshint *.js stores/*.js middleware/*.js example/*.js",
+    "prepublish": "nsp check",
+    "test": "tape test/unit/*.js test/*.js"
+  },
+  "semistandard": {
+    "ignore": [
+      "**/phantomjs*/"
+    ]
+  },
+  "version": "3.3.0-cr.2"
+}

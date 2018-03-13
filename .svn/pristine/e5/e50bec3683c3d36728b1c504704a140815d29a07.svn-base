@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "keycloak-request-token@^0.1.0",
+        "scope": null,
+        "escapedName": "keycloak-request-token",
+        "name": "keycloak-request-token",
+        "rawSpec": "^0.1.0",
+        "spec": ">=0.1.0 <0.2.0",
+        "type": "range"
+      },
+      "/home/tibco/devl/keycloak-nodejs-example-master/keycloak-nodejs-example-master"
+    ]
+  ],
+  "_from": "keycloak-request-token@>=0.1.0 <0.2.0",
+  "_id": "keycloak-request-token@0.1.0",
+  "_inCache": true,
+  "_location": "/keycloak-request-token",
+  "_nodeVersion": "5.10.1",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/keycloak-request-token-0.1.0.tgz_1462985179274_0.46050020842812955"
+  },
+  "_npmUser": {
+    "name": "lholmquist",
+    "email": "lholmqui@redhat.com"
+  },
+  "_npmVersion": "3.8.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "keycloak-request-token@^0.1.0",
+    "scope": null,
+    "escapedName": "keycloak-request-token",
+    "name": "keycloak-request-token",
+    "rawSpec": "^0.1.0",
+    "spec": ">=0.1.0 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/keycloak-admin-client"
+  ],
+  "_resolved": "https://registry.npmjs.org/keycloak-request-token/-/keycloak-request-token-0.1.0.tgz",
+  "_shasum": "919d1ac46237db568d4d45322a213cee2636e2a8",
+  "_shrinkwrap": null,
+  "_spec": "keycloak-request-token@^0.1.0",
+  "_where": "/home/tibco/devl/keycloak-nodejs-example-master/keycloak-nodejs-example-master",
+  "author": {
+    "name": "Red Hat, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/bucharest-gold/keycloak-admin-client/issues"
+  },
+  "dependencies": {},
+  "description": "Simple utility to request a token from a Keycloak Server",
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "ink-docstrap": "^1.1.4",
+    "istanbul": "^0.4.3",
+    "jsdoc": "^3.4.0",
+    "jshint": "^2.9.1",
+    "nsp": "^2.3.0",
+    "tape": "^4.5.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "919d1ac46237db568d4d45322a213cee2636e2a8",
+    "tarball": "https://registry.npmjs.org/keycloak-request-token/-/keycloak-request-token-0.1.0.tgz"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "gitHead": "3612a5473684bc1038a0742e69ef7076ad53ba97",
+  "homepage": "https://github.com/bucharest-gold/keycloak-admin-client#readme",
+  "keywords": [
+    "Keycloak",
+    "Node.js"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": {
+    "name": "Lucas Holmquist",
+    "email": "lholmqui@redhat.com"
+  },
+  "name": "keycloak-request-token",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bucharest-gold/keycloak-admin-client.git"
+  },
+  "scripts": {
+    "coverage": "istanbul cover tape -- test/*.js",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "docs": "jsdoc --verbose -d docs -t ./node_modules/ink-docstrap/template -R README.md index.js",
+    "lint": "jshint index.js test/*.js",
+    "prepublish": "./node_modules/nsp/bin/nsp check",
+    "test": "tape test/*-test.js"
+  },
+  "version": "0.1.0"
+}
